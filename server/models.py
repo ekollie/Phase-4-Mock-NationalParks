@@ -10,3 +10,12 @@ metadata = MetaData(naming_convention = {
 
 # creates SQLAlchemy DB ORM
 db = SQLAlchemy(metadata = metadata)
+
+class User(db.Model, SerializerMixin):
+    pass
+
+class NationalPark(db.Model, SerializerMixin):
+    pass
+
+class UserVisitedPark(db.Model, SerializerMixin):
+    pass
